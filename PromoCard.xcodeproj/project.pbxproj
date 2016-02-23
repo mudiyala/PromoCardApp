@@ -1,0 +1,765 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E00EE6BA1C7B96160086C344 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E00EE6B91C7B96160086C344 /* main.m */; };
+		E00EE6BD1C7B96160086C344 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E00EE6BC1C7B96160086C344 /* AppDelegate.m */; };
+		E00EE6C01C7B96160086C344 /* PromoCard.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E00EE6BE1C7B96160086C344 /* PromoCard.xcdatamodeld */; };
+		E00EE6C31C7B96160086C344 /* PromotionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E00EE6C21C7B96160086C344 /* PromotionViewController.m */; };
+		E00EE6C81C7B96160086C344 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E00EE6C71C7B96160086C344 /* Images.xcassets */; };
+		E00EE6D71C7B96170086C344 /* PromoCardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E00EE6D61C7B96170086C344 /* PromoCardTests.m */; };
+		E00EE7231C7B98570086C344 /* ThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E00EE7221C7B98570086C344 /* ThemeManager.m */; };
+		E00EE7261C7B997A0086C344 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = E00EE7251C7B997A0086C344 /* Constants.m */; };
+		E00EE7281C7BA1980086C344 /* main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E00EE7271C7BA1980086C344 /* main.storyboard */; };
+		E00EE7291C7BA4270086C344 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E00EE6C91C7B96160086C344 /* LaunchScreen.xib */; };
+		E00EE72F1C7BA6290086C344 /* Promotion.m in Sources */ = {isa = PBXBuildFile; fileRef = E00EE72E1C7BA6290086C344 /* Promotion.m */; };
+		E00EE7321C7BA6290086C344 /* PromotionPath.m in Sources */ = {isa = PBXBuildFile; fileRef = E00EE7311C7BA6290086C344 /* PromotionPath.m */; };
+		E00EE7351C7BA68B0086C344 /* DataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = E00EE7341C7BA68B0086C344 /* DataSource.m */; };
+		E00EE7391C7BA73E0086C344 /* CoreDataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = E00EE7381C7BA73E0086C344 /* CoreDataHelper.m */; };
+		E00EE73E1C7BA9DE0086C344 /* PromotionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E00EE73D1C7BA9DE0086C344 /* PromotionManager.m */; };
+		E00EE7411C7BA9F70086C344 /* PromotionHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = E00EE7401C7BA9F70086C344 /* PromotionHTTPClient.m */; };
+		E00EE7431C7BAAF40086C344 /* PromoCardSettings.plist in Resources */ = {isa = PBXBuildFile; fileRef = E00EE7421C7BAAF40086C344 /* PromoCardSettings.plist */; };
+		E00EE7461C7BAC5E0086C344 /* PromotionDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E00EE7451C7BAC5E0086C344 /* PromotionDetailViewController.m */; };
+		E00EE74A1C7BC4C50086C344 /* CoreDataHelperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E00EE7491C7BC4C50086C344 /* CoreDataHelperTests.m */; };
+		E00EE74D1C7BC5300086C344 /* TestHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = E00EE74C1C7BC5300086C344 /* TestHelpers.m */; };
+		E00EE75A1C7BC6770086C344 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E00EE7591C7BC6770086C344 /* libOCMock.a */; };
+		E00EE75B1C7BC7050086C344 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E00EE7591C7BC6770086C344 /* libOCMock.a */; };
+		E00EE75E1C7BD6490086C344 /* PromotionsFetchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E00EE75D1C7BD6490086C344 /* PromotionsFetchTests.m */; };
+		E00EE7611C7BF3590086C344 /* Readme.pdf in Resources */ = {isa = PBXBuildFile; fileRef = E00EE7601C7BF3590086C344 /* Readme.pdf */; };
+		FD282B39FF4FB38B69983008 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 640C5ACD32016BA15375658B /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E00EE6D11C7B96170086C344 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E00EE6AC1C7B96150086C344 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E00EE6B31C7B96160086C344;
+			remoteInfo = PromoCard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0884EF790D55695730FBC13B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		640C5ACD32016BA15375658B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDDEE6F46A496181101D6F0F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		E00EE6B41C7B96160086C344 /* PromoCard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PromoCard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E00EE6B81C7B96160086C344 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E00EE6B91C7B96160086C344 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E00EE6BB1C7B96160086C344 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E00EE6BC1C7B96160086C344 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E00EE6BF1C7B96160086C344 /* PromoCard.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PromoCard.xcdatamodel; sourceTree = "<group>"; };
+		E00EE6C11C7B96160086C344 /* PromotionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PromotionViewController.h; sourceTree = "<group>"; };
+		E00EE6C21C7B96160086C344 /* PromotionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PromotionViewController.m; sourceTree = "<group>"; };
+		E00EE6C71C7B96160086C344 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E00EE6CA1C7B96160086C344 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		E00EE6D01C7B96170086C344 /* PromoCardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PromoCardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E00EE6D51C7B96170086C344 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E00EE6D61C7B96170086C344 /* PromoCardTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PromoCardTests.m; sourceTree = "<group>"; };
+		E00EE7211C7B98570086C344 /* ThemeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThemeManager.h; sourceTree = "<group>"; };
+		E00EE7221C7B98570086C344 /* ThemeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThemeManager.m; sourceTree = "<group>"; };
+		E00EE7241C7B997A0086C344 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		E00EE7251C7B997A0086C344 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		E00EE7271C7BA1980086C344 /* main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = main.storyboard; path = ../main.storyboard; sourceTree = "<group>"; };
+		E00EE72D1C7BA6290086C344 /* Promotion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Promotion.h; sourceTree = "<group>"; };
+		E00EE72E1C7BA6290086C344 /* Promotion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Promotion.m; sourceTree = "<group>"; };
+		E00EE7301C7BA6290086C344 /* PromotionPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PromotionPath.h; sourceTree = "<group>"; };
+		E00EE7311C7BA6290086C344 /* PromotionPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PromotionPath.m; sourceTree = "<group>"; };
+		E00EE7331C7BA68B0086C344 /* DataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataSource.h; sourceTree = "<group>"; };
+		E00EE7341C7BA68B0086C344 /* DataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataSource.m; sourceTree = "<group>"; };
+		E00EE7371C7BA73E0086C344 /* CoreDataHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataHelper.h; sourceTree = "<group>"; };
+		E00EE7381C7BA73E0086C344 /* CoreDataHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataHelper.m; sourceTree = "<group>"; };
+		E00EE73C1C7BA9DE0086C344 /* PromotionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PromotionManager.h; sourceTree = "<group>"; };
+		E00EE73D1C7BA9DE0086C344 /* PromotionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PromotionManager.m; sourceTree = "<group>"; };
+		E00EE73F1C7BA9F70086C344 /* PromotionHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PromotionHTTPClient.h; sourceTree = "<group>"; };
+		E00EE7401C7BA9F70086C344 /* PromotionHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PromotionHTTPClient.m; sourceTree = "<group>"; };
+		E00EE7421C7BAAF40086C344 /* PromoCardSettings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PromoCardSettings.plist; sourceTree = "<group>"; };
+		E00EE7441C7BAC5E0086C344 /* PromotionDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PromotionDetailViewController.h; sourceTree = "<group>"; };
+		E00EE7451C7BAC5E0086C344 /* PromotionDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PromotionDetailViewController.m; sourceTree = "<group>"; };
+		E00EE7471C7BAD880086C344 /* AutoLayoutUtility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutoLayoutUtility.h; sourceTree = "<group>"; };
+		E00EE7481C7BC4C50086C344 /* CoreDataHelperTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataHelperTests.h; sourceTree = "<group>"; };
+		E00EE7491C7BC4C50086C344 /* CoreDataHelperTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataHelperTests.m; sourceTree = "<group>"; };
+		E00EE74B1C7BC5300086C344 /* TestHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestHelpers.h; sourceTree = "<group>"; };
+		E00EE74C1C7BC5300086C344 /* TestHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestHelpers.m; sourceTree = "<group>"; };
+		E00EE7521C7BC6770086C344 /* NSNotificationCenter+OCMAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNotificationCenter+OCMAdditions.h"; sourceTree = "<group>"; };
+		E00EE7531C7BC6770086C344 /* OCMArg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMArg.h; sourceTree = "<group>"; };
+		E00EE7541C7BC6770086C344 /* OCMConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMConstraint.h; sourceTree = "<group>"; };
+		E00EE7551C7BC6770086C344 /* OCMock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMock.h; sourceTree = "<group>"; };
+		E00EE7561C7BC6770086C344 /* OCMockObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMockObject.h; sourceTree = "<group>"; };
+		E00EE7571C7BC6770086C344 /* OCMockRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMockRecorder.h; sourceTree = "<group>"; };
+		E00EE7591C7BC6770086C344 /* libOCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libOCMock.a; sourceTree = "<group>"; };
+		E00EE75C1C7BD6490086C344 /* PromotionsFetchTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PromotionsFetchTests.h; sourceTree = "<group>"; };
+		E00EE75D1C7BD6490086C344 /* PromotionsFetchTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PromotionsFetchTests.m; sourceTree = "<group>"; };
+		E00EE7601C7BF3590086C344 /* Readme.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Readme.pdf; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E00EE6B11C7B96160086C344 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E00EE75B1C7BC7050086C344 /* libOCMock.a in Frameworks */,
+				FD282B39FF4FB38B69983008 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E00EE6CD1C7B96170086C344 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E00EE75A1C7BC6770086C344 /* libOCMock.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		149105B363D7B4CBECA54277 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0884EF790D55695730FBC13B /* Pods.debug.xcconfig */,
+				BDDEE6F46A496181101D6F0F /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D5A910B59B56A84E0631FF2C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E00EE74E1C7BC6650086C344 /* OCMock */,
+				640C5ACD32016BA15375658B /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E00EE6AB1C7B96150086C344 = {
+			isa = PBXGroup;
+			children = (
+				E00EE7601C7BF3590086C344 /* Readme.pdf */,
+				E00EE6B61C7B96160086C344 /* PromoCard */,
+				E00EE6D31C7B96170086C344 /* PromoCardTests */,
+				E00EE6B51C7B96160086C344 /* Products */,
+				149105B363D7B4CBECA54277 /* Pods */,
+				D5A910B59B56A84E0631FF2C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E00EE6B51C7B96160086C344 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E00EE6B41C7B96160086C344 /* PromoCard.app */,
+				E00EE6D01C7B96170086C344 /* PromoCardTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E00EE6B61C7B96160086C344 /* PromoCard */ = {
+			isa = PBXGroup;
+			children = (
+				E00EE71B1C7B97BF0086C344 /* Settings */,
+				E00EE7191C7B978C0086C344 /* Models */,
+				E00EE7181C7B97800086C344 /* Services */,
+				E00EE6BB1C7B96160086C344 /* AppDelegate.h */,
+				E00EE6BC1C7B96160086C344 /* AppDelegate.m */,
+				E00EE6C11C7B96160086C344 /* PromotionViewController.h */,
+				E00EE6C21C7B96160086C344 /* PromotionViewController.m */,
+				E00EE7441C7BAC5E0086C344 /* PromotionDetailViewController.h */,
+				E00EE7451C7BAC5E0086C344 /* PromotionDetailViewController.m */,
+				E00EE6C71C7B96160086C344 /* Images.xcassets */,
+				E00EE6C91C7B96160086C344 /* LaunchScreen.xib */,
+				E00EE7271C7BA1980086C344 /* main.storyboard */,
+				E00EE6BE1C7B96160086C344 /* PromoCard.xcdatamodeld */,
+				E00EE6B71C7B96160086C344 /* Supporting Files */,
+			);
+			path = PromoCard;
+			sourceTree = "<group>";
+		};
+		E00EE6B71C7B96160086C344 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E00EE6B81C7B96160086C344 /* Info.plist */,
+				E00EE6B91C7B96160086C344 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E00EE6D31C7B96170086C344 /* PromoCardTests */ = {
+			isa = PBXGroup;
+			children = (
+				E00EE6D61C7B96170086C344 /* PromoCardTests.m */,
+				E00EE7481C7BC4C50086C344 /* CoreDataHelperTests.h */,
+				E00EE7491C7BC4C50086C344 /* CoreDataHelperTests.m */,
+				E00EE74B1C7BC5300086C344 /* TestHelpers.h */,
+				E00EE74C1C7BC5300086C344 /* TestHelpers.m */,
+				E00EE6D41C7B96170086C344 /* Supporting Files */,
+				E00EE75C1C7BD6490086C344 /* PromotionsFetchTests.h */,
+				E00EE75D1C7BD6490086C344 /* PromotionsFetchTests.m */,
+			);
+			path = PromoCardTests;
+			sourceTree = "<group>";
+		};
+		E00EE6D41C7B96170086C344 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E00EE6D51C7B96170086C344 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E00EE7181C7B97800086C344 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				E00EE73A1C7BA99C0086C344 /* PromotionManager */,
+				E00EE7361C7BA7270086C344 /* CoreDataHelper */,
+				E00EE71A1C7B979E0086C344 /* DataSource */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		E00EE7191C7B978C0086C344 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E00EE7301C7BA6290086C344 /* PromotionPath.h */,
+				E00EE7311C7BA6290086C344 /* PromotionPath.m */,
+				E00EE72D1C7BA6290086C344 /* Promotion.h */,
+				E00EE72E1C7BA6290086C344 /* Promotion.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E00EE71A1C7B979E0086C344 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				E00EE7331C7BA68B0086C344 /* DataSource.h */,
+				E00EE7341C7BA68B0086C344 /* DataSource.m */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		E00EE71B1C7B97BF0086C344 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				E00EE7201C7B98040086C344 /* Constants */,
+				E00EE71C1C7B97D50086C344 /* ThemeManager */,
+				E00EE7421C7BAAF40086C344 /* PromoCardSettings.plist */,
+				E00EE7471C7BAD880086C344 /* AutoLayoutUtility.h */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		E00EE71C1C7B97D50086C344 /* ThemeManager */ = {
+			isa = PBXGroup;
+			children = (
+				E00EE7211C7B98570086C344 /* ThemeManager.h */,
+				E00EE7221C7B98570086C344 /* ThemeManager.m */,
+			);
+			path = ThemeManager;
+			sourceTree = "<group>";
+		};
+		E00EE7201C7B98040086C344 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				E00EE7241C7B997A0086C344 /* Constants.h */,
+				E00EE7251C7B997A0086C344 /* Constants.m */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		E00EE7361C7BA7270086C344 /* CoreDataHelper */ = {
+			isa = PBXGroup;
+			children = (
+				E00EE7371C7BA73E0086C344 /* CoreDataHelper.h */,
+				E00EE7381C7BA73E0086C344 /* CoreDataHelper.m */,
+			);
+			path = CoreDataHelper;
+			sourceTree = "<group>";
+		};
+		E00EE73A1C7BA99C0086C344 /* PromotionManager */ = {
+			isa = PBXGroup;
+			children = (
+				E00EE73B1C7BA9BB0086C344 /* PromotionHTTPClient */,
+				E00EE73C1C7BA9DE0086C344 /* PromotionManager.h */,
+				E00EE73D1C7BA9DE0086C344 /* PromotionManager.m */,
+			);
+			path = PromotionManager;
+			sourceTree = "<group>";
+		};
+		E00EE73B1C7BA9BB0086C344 /* PromotionHTTPClient */ = {
+			isa = PBXGroup;
+			children = (
+				E00EE73F1C7BA9F70086C344 /* PromotionHTTPClient.h */,
+				E00EE7401C7BA9F70086C344 /* PromotionHTTPClient.m */,
+			);
+			path = PromotionHTTPClient;
+			sourceTree = "<group>";
+		};
+		E00EE74E1C7BC6650086C344 /* OCMock */ = {
+			isa = PBXGroup;
+			children = (
+				E00EE74F1C7BC6770086C344 /* usr */,
+			);
+			name = OCMock;
+			sourceTree = "<group>";
+		};
+		E00EE74F1C7BC6770086C344 /* usr */ = {
+			isa = PBXGroup;
+			children = (
+				E00EE7501C7BC6770086C344 /* include */,
+				E00EE7581C7BC6770086C344 /* lib */,
+			);
+			path = usr;
+			sourceTree = "<group>";
+		};
+		E00EE7501C7BC6770086C344 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				E00EE7511C7BC6770086C344 /* OCMock */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		E00EE7511C7BC6770086C344 /* OCMock */ = {
+			isa = PBXGroup;
+			children = (
+				E00EE7521C7BC6770086C344 /* NSNotificationCenter+OCMAdditions.h */,
+				E00EE7531C7BC6770086C344 /* OCMArg.h */,
+				E00EE7541C7BC6770086C344 /* OCMConstraint.h */,
+				E00EE7551C7BC6770086C344 /* OCMock.h */,
+				E00EE7561C7BC6770086C344 /* OCMockObject.h */,
+				E00EE7571C7BC6770086C344 /* OCMockRecorder.h */,
+			);
+			path = OCMock;
+			sourceTree = "<group>";
+		};
+		E00EE7581C7BC6770086C344 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				E00EE7591C7BC6770086C344 /* libOCMock.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E00EE6B31C7B96160086C344 /* PromoCard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E00EE6DA1C7B96170086C344 /* Build configuration list for PBXNativeTarget "PromoCard" */;
+			buildPhases = (
+				080847FFA11B4BB21768A8A8 /* Check Pods Manifest.lock */,
+				E00EE6B01C7B96160086C344 /* Sources */,
+				E00EE6B11C7B96160086C344 /* Frameworks */,
+				E00EE6B21C7B96160086C344 /* Resources */,
+				C0E4CF14A5F89811F72BE54F /* Embed Pods Frameworks */,
+				DE7E66587B8FFD64C772A353 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PromoCard;
+			productName = PromoCard;
+			productReference = E00EE6B41C7B96160086C344 /* PromoCard.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E00EE6CF1C7B96170086C344 /* PromoCardTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E00EE6DD1C7B96170086C344 /* Build configuration list for PBXNativeTarget "PromoCardTests" */;
+			buildPhases = (
+				E00EE6CC1C7B96170086C344 /* Sources */,
+				E00EE6CD1C7B96170086C344 /* Frameworks */,
+				E00EE6CE1C7B96170086C344 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E00EE6D21C7B96170086C344 /* PBXTargetDependency */,
+			);
+			name = PromoCardTests;
+			productName = PromoCardTests;
+			productReference = E00EE6D01C7B96170086C344 /* PromoCardTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E00EE6AC1C7B96150086C344 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Krishna Mudiyala";
+				TargetAttributes = {
+					E00EE6B31C7B96160086C344 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					E00EE6CF1C7B96170086C344 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = E00EE6B31C7B96160086C344;
+					};
+				};
+			};
+			buildConfigurationList = E00EE6AF1C7B96160086C344 /* Build configuration list for PBXProject "PromoCard" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E00EE6AB1C7B96150086C344;
+			productRefGroup = E00EE6B51C7B96160086C344 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E00EE6B31C7B96160086C344 /* PromoCard */,
+				E00EE6CF1C7B96170086C344 /* PromoCardTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E00EE6B21C7B96160086C344 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E00EE7291C7BA4270086C344 /* LaunchScreen.xib in Resources */,
+				E00EE7431C7BAAF40086C344 /* PromoCardSettings.plist in Resources */,
+				E00EE7281C7BA1980086C344 /* main.storyboard in Resources */,
+				E00EE6C81C7B96160086C344 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E00EE6CE1C7B96170086C344 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E00EE7611C7BF3590086C344 /* Readme.pdf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		080847FFA11B4BB21768A8A8 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C0E4CF14A5F89811F72BE54F /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DE7E66587B8FFD64C772A353 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E00EE6B01C7B96160086C344 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E00EE6BD1C7B96160086C344 /* AppDelegate.m in Sources */,
+				E00EE6BA1C7B96160086C344 /* main.m in Sources */,
+				E00EE7231C7B98570086C344 /* ThemeManager.m in Sources */,
+				E00EE6C31C7B96160086C344 /* PromotionViewController.m in Sources */,
+				E00EE6C01C7B96160086C344 /* PromoCard.xcdatamodeld in Sources */,
+				E00EE7461C7BAC5E0086C344 /* PromotionDetailViewController.m in Sources */,
+				E00EE7261C7B997A0086C344 /* Constants.m in Sources */,
+				E00EE7411C7BA9F70086C344 /* PromotionHTTPClient.m in Sources */,
+				E00EE7321C7BA6290086C344 /* PromotionPath.m in Sources */,
+				E00EE72F1C7BA6290086C344 /* Promotion.m in Sources */,
+				E00EE7391C7BA73E0086C344 /* CoreDataHelper.m in Sources */,
+				E00EE73E1C7BA9DE0086C344 /* PromotionManager.m in Sources */,
+				E00EE7351C7BA68B0086C344 /* DataSource.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E00EE6CC1C7B96170086C344 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E00EE75E1C7BD6490086C344 /* PromotionsFetchTests.m in Sources */,
+				E00EE74A1C7BC4C50086C344 /* CoreDataHelperTests.m in Sources */,
+				E00EE74D1C7BC5300086C344 /* TestHelpers.m in Sources */,
+				E00EE6D71C7B96170086C344 /* PromoCardTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E00EE6D21C7B96170086C344 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E00EE6B31C7B96160086C344 /* PromoCard */;
+			targetProxy = E00EE6D11C7B96170086C344 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E00EE6C91C7B96160086C344 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E00EE6CA1C7B96160086C344 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E00EE6D81C7B96170086C344 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E00EE6D91C7B96170086C344 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E00EE6DB1C7B96170086C344 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0884EF790D55695730FBC13B /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
+					"\"${PODS_ROOT}/Headers/Public/CocoaLumberjack\"",
+					"\"${PODS_ROOT}/Headers/Public/MBProgressHUD\"",
+					"$(PROJECT_DIR)/usr/include",
+				);
+				INFOPLIST_FILE = PromoCard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/usr/lib",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E00EE6DC1C7B96170086C344 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BDDEE6F46A496181101D6F0F /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
+					"\"${PODS_ROOT}/Headers/Public/CocoaLumberjack\"",
+					"\"${PODS_ROOT}/Headers/Public/MBProgressHUD\"",
+					"$(PROJECT_DIR)/usr/include",
+				);
+				INFOPLIST_FILE = PromoCard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/usr/lib",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E00EE6DE1C7B96170086C344 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PromoCardTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/usr/lib",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PromoCard.app/PromoCard";
+			};
+			name = Debug;
+		};
+		E00EE6DF1C7B96170086C344 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PromoCardTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/usr/lib",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PromoCard.app/PromoCard";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E00EE6AF1C7B96160086C344 /* Build configuration list for PBXProject "PromoCard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E00EE6D81C7B96170086C344 /* Debug */,
+				E00EE6D91C7B96170086C344 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E00EE6DA1C7B96170086C344 /* Build configuration list for PBXNativeTarget "PromoCard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E00EE6DB1C7B96170086C344 /* Debug */,
+				E00EE6DC1C7B96170086C344 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E00EE6DD1C7B96170086C344 /* Build configuration list for PBXNativeTarget "PromoCardTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E00EE6DE1C7B96170086C344 /* Debug */,
+				E00EE6DF1C7B96170086C344 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E00EE6BE1C7B96160086C344 /* PromoCard.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E00EE6BF1C7B96160086C344 /* PromoCard.xcdatamodel */,
+			);
+			currentVersion = E00EE6BF1C7B96160086C344 /* PromoCard.xcdatamodel */;
+			path = PromoCard.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = E00EE6AC1C7B96150086C344 /* Project object */;
+}

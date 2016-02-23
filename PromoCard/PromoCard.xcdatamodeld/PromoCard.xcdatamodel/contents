@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7701" systemVersion="14F27" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Promotion" representedClassName="Promotion" syncable="YES">
+        <attribute name="footer" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imageName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="summary" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="promotionPath" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PromotionPath" inverseName="promotion" inverseEntity="PromotionPath" syncable="YES"/>
+    </entity>
+    <entity name="PromotionPath" representedClassName="PromotionPath" syncable="YES">
+        <attribute name="path" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="promotion" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Promotion" inverseName="promotionPath" inverseEntity="Promotion" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Promotion" positionX="-63" positionY="-18" width="128" height="120"/>
+        <element name="PromotionPath" positionX="-54" positionY="-9" width="128" height="90"/>
+    </elements>
+</model>
